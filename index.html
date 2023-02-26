@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donovan Lopez | Frontend Engineer</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("C0DmF2EILNSfuOV5b");
+      })();
+    </script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img
+            id="personal-logo"
+            src="./eportfolio-assets/personal-logo-transparent.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a href="#" class="nav__link--anchor"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey!</h1>
+          <h1 class="title blue">I'm Donovan.</h1>
+          <p class="header__para">
+            I'm a <b class="blue">Frontend Engineer</b> with a strong passion
+            for building responsive and performant web applications with great
+            user experiences that positively impacts the world.
+            <br />
+            Here's a bit more
+            <b class="blue click" onclick="toggleModal()">about me.</b>
+          </p>
+          <div class="social__list">
+            <a
+              class="social__link click"
+              href="https://www.linkedin.com/in/donovan-lopez-m81352207"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              class="social__link click"
+              href="https://github.com/donovanm8"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="social__link click" href="#">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a 19 year-old American
+            <b class="blue">Frontend Engineer</b> with a passion for creating
+            seamless and intuitive <b class="blue">user experiences</b>.I've
+            honed my skills through hands-on experience and mentorship from
+            top-tier software engineers at companies like
+            <b class="blue">Canva, Atlassian</b> and
+            <b class="blue">AfterPay</b>.
+            <br />
+            As a novice to the tech industry, whether I'm optimizing website
+            performance,implementing responsive designs,or
+            <b class="blue">collaborating</b> with cross-functional teams, I
+            approach every project with a strong work ethic and attention to
+            detail.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/512px-CSS3_logo.svg.png?20210705212817"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                alt=""
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
+                alt=""
+              />
+              <span class="language__name">SaaS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
+                alt=""
+              />
+              <span class="language__name">Next.js</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+                alt=""
+              />
+              <span class="language__name">Redux</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h4>
+          <form action="" id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="text" name="user_name" class="input" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input type="email" name="user_email" class="input" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea type="text" name="message" class="input"> </textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking foward to speaking to you soon.
+          </div>
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        </div>
+      </div>
+      <img src="./eportfolio-assets/semi circle.svg" class="shape shape--0" />
+      <img src="./eportfolio-assets/circle.svg" class="shape shape--1" />
+      <img src="./eportfolio-assets/squiggly.svg" class="shape shape--2" />
+      <img src="./eportfolio-assets/circle.svg" class="shape shape--3" />
+      <img src="./eportfolio-assets/triangle.svg" class="shape shape--4" />
+      <img src="./eportfolio-assets/circle.svg" class="shape shape--5" />
+      <img src="./eportfolio-assets/squiggly.svg" class="shape shape--6" />
+      <img src="./eportfolio-assets/circle.svg" class="shape shape--7" />
+      <img src="./eportfolio-assets/semi circle.svg" class="shape shape--8" />
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="blue">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./eportfolio-assets/project-img-ex.jpg"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    iLife! Website Clone
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript, React, Next.js
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Illum placeat nemo totam laboriosam amet. Culpa, et quae
+                    eligendi officiis, quis doloribus laboriosam voluptates
+                    nobis similique doloremque totam maxime laudantium
+                    repellendus!
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/donovanm8"
+                      target="_blank"
+                    >
+                      <i class="fa fa-github"></i>
+                    </a>
+                    <a
+                      class="project__description--link"
+                      href="https://youtu.be/hcZr631cEZI"
+                      target="_blank"
+                    >
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="./eportfolio-assets/personal-logo-transparent.png"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/donovanm8"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
+            >
+              Contact
+            </a>
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright &copy; 2023 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
