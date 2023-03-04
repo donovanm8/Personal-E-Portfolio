@@ -511,6 +511,7 @@ PROJECTS
 .project__img {
   width: 100%;
   transition: all 600ms ease;
+  transform: scale(1.1);
 }
 
 .project__wrapper:hover .project__description {
