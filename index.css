@@ -13,6 +13,7 @@ html {
 
 li {
   list-style: none;
+  margin-bottom: 200px;
 }
 
 p {
@@ -508,9 +509,7 @@ PROJECTS
   margin-bottom: 60px;
 }
 
-.project {
-  margin-bottom: 200px;
-}
+
 
 .project__img {
   width: 100%;
@@ -728,7 +727,7 @@ SHAPES
     .modal__language{
         padding: 22px;
     }
-    .project {
+    li {
       margin-bottom: 100px;
     }
 }
