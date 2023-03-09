@@ -508,10 +508,18 @@ PROJECTS
   margin-bottom: 60px;
 }
 
+.project {
+  margin-bottom: 200px;
+}
+
 .project__img {
   width: 100%;
   transition: all 600ms ease;
   transform: scale(1.1);
+}
+
+.project__img--netflix {
+  transform: scale(1);
 }
 
 .project__wrapper:hover .project__description {
@@ -719,5 +727,8 @@ SHAPES
     }
     .modal__language{
         padding: 22px;
+    }
+    .project {
+      margin-bottom: 100px;
     }
 }
