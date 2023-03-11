@@ -517,6 +517,10 @@ PROJECTS
   transform: scale(1.1);
 }
 
+.library__img {
+  transform: scale(1);
+}
+
 .project__img--netflix {
   transform: scale(1);
 }
